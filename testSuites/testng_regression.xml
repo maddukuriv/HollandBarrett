@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+ 
+	<groups>
+		<run>
+			<include name="Regression"></include>
+			</run>
+			</groups>
+	 <test thread-count="5" name="Test_All">
+    <classes>
+      <class name="com.hollandbarrett.testcases.SearchResultPageTest"/>
+      <class name="com.hollandbarrett.testcases.SignupPageTest"/>
+      <class name="com.hollandbarrett.testcases.HomePageTest"/>
+      <class name="com.hollandbarrett.testcases.LoginPageTest"/>
+      <class name="com.hollandbarrett.testcases.AccountPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
